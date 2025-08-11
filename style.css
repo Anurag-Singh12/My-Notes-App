@@ -18,10 +18,17 @@
   flex-direction: column;
 }
 
+.notes-container {
+  width: 100%;
+  max-width: 620px;
+}
+
 .container h1 {
   display: flex;
   align-items: center;
+  text-align: -webkit-center;
   font-size: 38px;
+  color:#3a3838;
   font-weight: 600;
 }
 
@@ -32,36 +39,37 @@
 .container button img {
   width: 25px;
   margin-right: 8px;
-  
 }
 
 .container button {
   display: flex;
   align-items: center;
-  background: linear-gradient(40deg, #5f60e5, #22ece4);
-  color: white;
+  background: linear-gradient(12deg, #5f60e5, #22ece4);
   font-size: 16px;
   border: none;
   border-radius: 40px;
   padding: 15px 25px; /* top-bottom , left-right */
   margin: 30px 0 20px;
   cursor: pointer;
-  color:#4e4b4b;
+  color: azure;
+}
+
+.container button:hover {
+  background: linear-gradient(337deg, #a543d5, #42c2ff);
 }
 
 .input-box {
   border: none;
   position: relative;
-  min-width: 586px;
   min-height: 204px;
-  background: white;
-  color: #333;
+  background: azure;
+  color: #230f0f;
   outline: none;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 16px;
+  margin: 20px 0; /*top-bottom,left right*/
   border-radius: 5px;
   white-space: pre-wrap;
-  box-shadow: 2px 4px 24px 2px #3e4f3a
+  box-shadow: 2px 4px 24px 2px #3e4f3a;
 }
 
 .input-box:empty::before {
@@ -75,28 +83,6 @@
   right: 15px;
   cursor: pointer;
 }
-.delete-icon:hover{
+.delete-icon:hover {
   color: #2275ec;
-}
-
-
-@media (max-width: 640px) {
-  .input-box {
-    min-width: 532px;
-    min-height: 204px;
-  }
-}
-
-@media (max-width: 566px) {
-  .input-box {
-    min-width: 406px;
-    min-height: 204px;
-  }
-}
-
-@media (max-width: 436px) {
-  .input-box {
-    min-width: 284px;
-    min-height: 204px;
-  }
 }
